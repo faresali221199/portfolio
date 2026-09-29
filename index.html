@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fares Ali El-Sheikh – Data Engineer Portfolio</title>
+  <meta name="description" content="Fares Ali El-Sheikh – Data Engineer based in Alexandria, Egypt. Portfolio showcasing projects, skills, certificates and experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════ FLOATING 3D SHAPES ═══════════════ -->
+  <div class="floating-shapes" id="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+    <div class="shape shape-4"></div>
+    <div class="shape shape-5"></div>
+    <div class="shape shape-6"></div>
+  </div>
+
+  <!-- ═══════════════ TOP NAVIGATION BAR ═══════════════ -->
+  <nav class="top-bar">
+    <div class="top-bar-left">
+      <span class="logo">⚡ FARES.OS</span>
+      <a href="#profile" class="nav-link" data-section="001">001</a>
+      <a href="#biography" class="nav-link" data-section="002">002</a>
+      <a href="#principles" class="nav-link" data-section="003">003</a>
+      <a href="#stats" class="nav-link active" data-section="004">004</a>
+      <a href="#skills" class="nav-link" data-section="005">005</a>
+      <a href="#projects" class="nav-link" data-section="006">006</a>
+      <a href="#experience" class="nav-link" data-section="007">007</a>
+      <a href="#certificates" class="nav-link" data-section="008">008</a>
+      <a href="#contact" class="nav-link" data-section="009">009</a>
+    </div>
+    <div class="top-bar-right">
+      <span class="meta-info">FA-2026-001</span>
+      <span class="meta-info">ALEXANDRIA, EGYPT</span>
+      <span class="clock" id="live-clock">00:00:00:000</span>
+      <a href="CV.pdf" download class="download-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        DOWNLOAD CV
+      </a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+  <div class="main-wrapper">
+
+    <!-- ══════ ROW 1: Profile + Bio + Principles + Stats ══════ -->
+    <div class="grid-row hero-row">
+
+      <!-- PROFILE CARD -->
+      <section id="profile" class="card profile-card">
+        <div class="card-header">[ DEVELOPER_PROFILE / 001 ]</div>
+        <div class="profile-img-wrapper">
+          <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+          <img src="profile_bw.jpg" alt="Fares Ali El-Sheikh" class="profile-img" />
+        </div>
+        <div class="profile-info">
+          <h1 class="profile-name">FARES ALI<br/>EL-SHEIKH</h1>
+          <div class="barcode">||||| |||| ||| ||||| |||| ||| ||||</div>
+          <p class="profile-title">| DATA ENGINEER & CREATIVE TECHNOLOGIST</p>
+          <nav class="social-links">
+            <a href="https://www.linkedin.com/in/fares-el-sheikh-aa7758295" target="_blank" rel="noopener" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/faresali221199" target="_blank" rel="noopener" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://www.hackerrank.com/profile/eng_fares221199" target="_blank" rel="noopener" title="HackerRank">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701c.141 0 .254-.115.254-.258 0-.094-.049-.176-.123-.221L9.223 4.896c-.07-.078-.186-.094-.27-.035-.02.014-.038.032-.054.054L7.33 6.429c-.078.07-.093.186-.035.27.039.058.1.093.166.093h.7v10.263h-.7c-.141 0-.254.115-.254.258 0 .094.049.176.123.221l1.572 1.533c.07.078.186.094.27.035.02-.014.038-.032.054-.054l1.569-1.533c.078-.07.093-.186.035-.27-.039-.058-.1-.093-.166-.093h-.701v-4.025h4.074v4.174h-.7c-.141 0-.254.115-.254.258 0 .094.049.176.123.221l1.572 1.533c.07.078.186.094.27.035.02-.014.038-.032.054-.054l1.569-1.533c.078-.07.093-.186.035-.27-.039-.058-.1-.093-.166-.093h-.7V7.057c0-.141-.115-.258-.258-.258z"/></svg>
+            </a>
+            <a href="https://link.gettap.co/Fareselsheikh136189" target="_blank" rel="noopener" title="GetTap">
+              <svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#1a1a1a"/><text x="12" y="15.5" text-anchor="middle" font-size="8" font-weight="600" font-family="Arial, sans-serif" fill="white">tap.</text></svg>
+            </a>
+            <a href="https://www.youtube.com/@Fares_Ali_EL_sheikh" target="_blank" rel="noopener" title="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@eng_fares_ali?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" title="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="https://khamsat.com/user/eng_fares_ali" target="_blank" rel="noopener" title="Khamsat">
+              <svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#F5A623"/><text x="12" y="16.5" text-anchor="middle" font-size="13" font-weight="900" font-family="Arial, sans-serif" fill="#1a1a1a">5</text></svg>
+            </a>
+            <a href="https://mostaql.com/u/ENG_Fares_ali" target="_blank" rel="noopener" title="Mostaql">
+              <svg width="18" height="18" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#2B62A0"/><text x="12" y="17" text-anchor="middle" font-size="13" font-weight="900" font-family="Arial, sans-serif" fill="white">م</text></svg>
+            </a>
+            <a href="https://www.upwork.com/freelancers/~012c1c14df200c2f6a?mp_source=share" target="_blank" rel="noopener" title="Upwork">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703 0 1.491-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg>
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- RIGHT COLUMN -->
+      <div class="right-column">
+
+        <!-- BIOGRAPHY -->
+        <section id="biography" class="card bio-card">
+          <div class="card-header">[ BIOGRAPHY / 002 ]</div>
+          <h2 class="bio-headline">ENGINEERING DATA PIPELINES, SYSTEMS, AND INTELLIGENT SOLUTIONS.</h2>
+          <p class="bio-text">Instead of wasting time in chaotic spreadsheet loops and guessing your numbers, I build robust data pipelines and interactive dashboards that reveal the truth and show your performance in seconds. I'm Fares El-Sheikh, an engineer and developer specializing in Data Engineering with intensive practical experience from my training at the Digital Egypt Pioneers Initiative (DEPI) sponsored by Microsoft.</p>
+          <p class="bio-text">I focus on data analysis, transforming raw data into actionable insights to drive decision-making and performance optimization. With a strict commitment to precision, clean architecture, and your technical requirements, my goal is to deliver scalable solutions with reliable communication and your 100% satisfaction.</p>
+          <div class="bio-highlight">
+            <span class="highlight-marker">›</span>
+            My strongest work happens where data engineering, backend architecture, and visual analytics meet.
+          </div>
+        </section>
+
+        <!-- PRINCIPLES -->
+        <section id="principles" class="card principles-card">
+          <div class="card-header">[ PRINCIPLES / 003 ]</div>
+          <div class="principles-grid">
+            <div class="principle">
+              <span class="principle-dot"></span>
+              <span class="principle-text">BUILD WITH DATA INTEGRITY</span>
+              <span class="principle-num">01</span>
+            </div>
+            <div class="principle">
+              <span class="principle-dot"></span>
+              <span class="principle-text">PRIORITIZE CLEAN ARCHITECTURE</span>
+              <span class="principle-num">04</span>
+            </div>
+            <div class="principle">
+              <span class="principle-dot"></span>
+              <span class="principle-text">REDUCE UNNECESSARY COMPLEXITY</span>
+              <span class="principle-num">02</span>
+            </div>
+            <div class="principle">
+              <span class="principle-dot"></span>
+              <span class="principle-text">SHIP STABLE AND TESTED SOLUTIONS</span>
+              <span class="principle-num">05</span>
+            </div>
+            <div class="principle">
+              <span class="principle-dot"></span>
+              <span class="principle-text">DESIGN SCALABLE SYSTEMS</span>
+              <span class="principle-num">03</span>
+            </div>
+            <div class="principle">
+              <span class="principle-dot active-dot"></span>
+              <span class="principle-text">THINK IN PIPELINES, NOT SCRIPTS</span>
+              <span class="principle-num">06</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- STATS -->
+        <section id="stats" class="card stats-card">
+          <div class="card-header">[ PERFORMANCE_DATA / 004 ]</div>
+          <div class="stats-grid">
+            <div class="stat">
+              <span class="stat-value">8+</span>
+              <span class="stat-label">PROJECTS DELIVERED</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">6+</span>
+              <span class="stat-label">CERTIFICATES & AWARDS</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">2nd</span>
+              <span class="stat-label">PLACE — NATIONAL COMPETITION</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">V.Good</span>
+              <span class="stat-label">ACADEMIC GRADE</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- ══════ ROW 2: SKILLS ══════ -->
+    <section id="skills" class="card full-width-card">
+      <div class="card-header">[ SKILLS_MATRIX / 005 ]</div>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">DATA ENGINEERING</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">RDBMS</span>
+            <span class="skill-tag">Data Modeling</span>
+            <span class="skill-tag">Big Data Foundations</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">DATA ANALYSIS</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">FRONTEND DEVELOPMENT</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Responsive Web Design</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">BACKEND DEVELOPMENT</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">MVC Pattern</span>
+            <span class="skill-tag">Software Architecture</span>
+            <span class="skill-tag">Database Integration</span>
+            <span class="skill-tag">OOP</span>
+          </div>
+          <div class="skill-bar"><div class="skill-bar-fill" style="width:75%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════ ROW 3: PROJECTS ══════ -->
+    <section id="projects" class="card full-width-card">
+      <div class="card-header">[ PROJECTS_LOG / 006 ]</div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-index">01</span>
+            <span class="project-date">DEC 2025 — MAY 2026</span>
+          </div>
+          <img src="assetsfarix_lms.jpg" alt="Farix LMS Thumbnail" class="project-thumbnail" />
+          <h3 class="project-name">FARIX LMS</h3>
+          <p class="project-subtitle">Learning Management System</p>
+          <p class="project-desc">Full-featured, solo-developed LMS built from scratch using C# and ASP.NET MVC architecture. Designed and implemented a robust relational database schema applying OOP principles to manage courses, student records, and educational content seamlessly.</p>
+          <div class="project-tags">
+            <span class="project-tag">C#</span>
+            <span class="project-tag">MVC</span>
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">OOP</span>
+          </div>
+          <a href="https://github.com/faresali221199/Farix-LMS" target="_blank" class="project-link">[ GITHUB REPO → ]</a>
+           <a href="https://codecraft-academy.runasp.net/" target="_blank" class="project-link">[ codecraft-academy → ]</a>
+        </div>
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-index">02</span>
+            <span class="project-date">DEC 2025 — MAR 2026</span>
+          </div>
+          <img src="sql.jpg" alt="HOSPITAL COMPLEX MGMT" class="project-thumbnail" />
+          <h3 class="project-name">HOSPITAL COMPLEX MGMT</h3>
+          <p class="project-subtitle">Database Management System</p>
+          <p class="project-desc">Comprehensive private hospital network management system. Served as the lead database designer, architecting robust SQL schemas and ensuring optimal data normalization across medical records, appointments, billing, and multi-department operations.</p>
+          <div class="project-tags">
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Data Modeling</span>
+            <span class="project-tag">RDBMS</span>
+            <span class="project-tag">System Architecture</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-index">03</span>
+            <span class="project-date">AUG 2026</span>
+          </div>
+          <img src="RETAIL SALES DASHBOARD.jpg" alt="RETAIL SALES DASHBOARD" class="project-thumbnail" />
+          <h3 class="project-name">RETAIL SALES DASHBOARD</h3>
+          <p class="project-subtitle">Data Analysis & Visualization</p>
+          <p class="project-desc">End-to-end solo data analytics project transforming raw retail data into actionable business intelligence. Engineered a complete data pipeline using Python, Pandas, NumPy, and SQL, complemented by an interactive multi-page Power BI dashboard for tracking KPIs and sales metrics.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">NumPy</span>
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">ETL</span>
+          </div>  
+          <a href="https://github.com/faresali221199/Retail-Sales-Analysis" target="_blank" class="project-link">[ GITHUB REPO → ]</a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNjJmNTgwZTgtZGRjNS00ZDNmLWJhYTktMmZiNGIyZDYzNTYzIiwidCI6IjIwODJkZTQ2LTFhZmEtNGI2NC1hNDQwLTY1NThmODBlOTg0MCIsImMiOjh9" target="_blank" class="project-link">[ POWER BI VIEW → ]</a>
+        </div>
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-index">04</span>
+            <span class="project-date">MAR 2023 — MAY 2023</span>
+          </div>
+           <img src="PLC.jpg" alt="WATER BOTTLING LINE" class="project-thumbnail" />
+          <h3 class="project-name">WATER BOTTLING LINE</h3>
+          <p class="project-subtitle">Industrial Automation System</p>
+          <p class="project-desc">Large-scale automated water production, bottling, and packaging line system. Developed collaboratively as a team focusing on overall control and system implementation. Awarded 2nd Place nationally in The Genius Competition by the Ministry of Higher Education.</p>
+          <div class="project-tags">
+            <span class="project-tag">Automation</span>
+            <span class="project-tag">PLC</span>
+            <span class="project-tag">Industrial Control</span>
+          </div>
+          <div class="project-badge">🏆 2ND PLACE — NATIONAL</div>
+          </div>
+        <div class="project-card">
+        <div class="project-top">
+          <span class="project-index">05</span>
+          <span class="project-date">AUG 2026</span>
+          </div>
+          <img src="1.jpg" alt="SUPERMARKET SALES PERFORMANCE DASHBOARD" class="project-thumbnail" />
+          <h3 class="project-name">SUPERMARKET SALES PERFORMANCE</h3>
+          <p class="project-subtitle">Data Analysis & BI Dashboard</p>
+          <p class="project-desc">End-to-end retail sales analytics pipeline utilizing Python, Pandas, NumPy, and SQL. Built an advanced interactive Power BI dashboard to uncover deep business intelligence insights and track KPIs.</p>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Power BI</span>
+            <span class="project-tag">SQL</span>
+          </div>
+          <div class="project-links" style="display: flex; gap: 15px; margin-top: 15px;">
+          <a href="https://github.com/faresali221199/Supermarket-Sales-Performance-Dashboard" target="_blank" class="project-link">[ GITHUB REPO → ]</a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiZGQ1MDVjMDEtNDlmYy00ODIyLThiOWItNzRiZmI0YzYwOTUzIiwidCI6IjIwODJkZTQ2LTFhZmEtNGI2NC1hNDQwLTY1NThmODBlOTg0MCIsImMiOjh9" target="_blank" class="project-link">[ POWER BI VIEW → ]</a>
+        </div>
+        </div>
+        <div class="project-card">
+        <div class="project-top">
+          <span class="project-index">06</span>
+          <span class="project-date">AUG 2026</span>
+          </div>
+          <img src="2.jpg" alt="SMOKING & PUBLIC HEALTH ANALYSIS" class="project-thumbnail" />
+          <h3 class="project-name">SMOKING & PUBLIC HEALTH ANALYSIS</h3>
+          <p class="project-subtitle">Data Analysis & BI Dashboard</p>
+          <p class="project-desc">Comprehensive global public health analysis tracking smoking prevalence, economic indicators, and mortality rates using Python data processing and interactive Power BI visualization.</p>
+          <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Pandas</span>
+          <span class="project-tag">Power BI</span>
+          <span class="project-tag">Data Analysis</span>
+          </div>
+          <div class="project-links" style="display: flex; gap: 15px; margin-top: 15px;">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiN2MxYTYxOGQtMzgxOC00ODU1LWFhMTMtZGVmNzA1MTgzMDc5IiwidCI6IjIwODJkZTQ2LTFhZmEtNGI2NC1hNDQwLTY1NThmODBlOTg0MCIsImMiOjh9&embedImagePlaceholder=true&pageName=dd3ef2fee4bc07cb109b" target="_blank" class="project-link">[ POWER BI VIEW → ]</a>
+        </div>
+        </div>
+        <div class="project-card">
+        <div class="project-top">
+          <span class="project-index">07</span>
+          <span class="project-date">AUG 2026</span>
+          </div>
+          <img src="Wuzzuf-Jobs-Scraper.jpg" alt="Wuzzuf Jobs Scraper Thumbnail" class="project-thumbnail" />
+          <h3 class="project-name">WUZZUF JOBS SCRAPER</h3>
+          <p class="project-subtitle">Web Scraping & Data Engineering</p>
+          <p class="project-desc">
+                     Automated Python web scraper for collecting structured job data from Wuzzuf,
+                     including job titles, companies, locations, skills, and requirements, with
+                    the extracted data exported to CSV for analysis.
+          </p>
+          <div class="project-tags">
+             <span class="project-tag">Python</span>
+             <span class="project-tag">Selenium</span>
+             <span class="project-tag">BeautifulSoup</span>
+             <span class="project-tag">Pandas</span>
+             </div>
+          <div class="project-links" style="display: flex; gap: 15px; margin-top: 15px;">
+          <a href="https://github.com/faresali221199/Wuzzuf-Jobs-Scraper" target="_blank" class="project-link">[ GITHUB REPO →]</a>
+        </div>
+        
+      </div>
+       <div class="project-card">
+        <div class="project-top">
+          <span class="project-index">08</span>
+          <span class="project-date">SEP  2026</span>
+          </div>
+          <img src="Yallakora-Matches-Scraper.jpg" alt="allakora Matches Scraper Thumbnail" class="project-thumbnail" />
+          <h3 class="project-name">YALLAKORA MATCHES SCRAPER</h3>
+          <p class="project-subtitle">Web Scraping & Sports Data</p>
+          <p class="project-desc">
+                    Automated Python web scraper for collecting football match data from Yallakora,
+                    including tournaments, competing teams, match times, and final results,
+                   with the extracted data structured and exported to CSV.
+          </p>
+          <div class="project-tags">
+             <span class="project-tag">Python</span>
+             <span class="project-tag">Selenium</span>
+             <span class="project-tag">BeautifulSoup</span>
+             <span class="project-tag">Pandas</span>
+             </div>
+          <div class="project-links" style="display: flex; gap: 15px; margin-top: 15px;">
+          <a href="https://github.com/faresali221199/Yallakora-Matches-Scraper" target="_blank" class="project-link">[ GITHUB REPO →]</a>
+        </div>
+       
+    </section>
+
+    <!-- ══════ ROW 4: EXPERIENCE & CERTIFICATES ══════ -->
+   <div class="grid-row two-col-row">
+    <style id="experience-007-tags-fix">
+/* EXPERIENCE_LOG / 007 ONLY */
+#experience .timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+#experience .timeline-tags .project-tag {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
+}
+</style>
+
+<section id="experience" class="card">
+     <div class="card-header">[ EXPERIENCE_LOG / 007 ]</div>
+    
+      <!-- تدريب DEPI (التقني والمهارات) -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+          <div class="timeline-content">
+          <div class="timeline-date" style="font-size: 0.75rem;">JUL 2026 — PRESENT</div>
+          <h3 class="timeline-title">DATA ENGINEER TRAINEE & DEPI ROUND 5 GRADUATION PROJECT LEADER</h3>
+          <p class="timeline-org" style="font-size: 0.78rem;">Digital Egypt Pioneers Initiative (DEPI) sponsored by Microsoft</p>
+          <p class="timeline-desc" style="font-size: 0.75rem; line-height: 1.5;">Intensive professional data engineering track covering advanced technical stacks: Python, SQL, Python APIs, Big Data, Cloud infrastructure, ETL pipelines, NoSQL databases, Data Lakes, and Data Warehouses. Also trained in essential professional soft skills and freelancing fundamentals.</p>
+         <div class="timeline-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">SQL</span>
+            <span class="project-tag">APIs</span>
+            <span class="project-tag">Big Data</span>
+            <span class="project-tag">Cloud</span>
+            <span class="project-tag">ETL</span>
+            <span class="project-tag">NoSQL</span>
+            <span class="project-tag">DL</span>
+            <span class="project-tag">DWH</span>
+            <span class="project-tag">Project Leadership</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ورشة المحلة (روبوتكس) -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+           <div class="timeline-date" style="font-size: 0.75rem;">MID 2025</div>
+           <h3 class="timeline-title">ROBOTICS & EMBEDDED SYSTEMS TRAINEE</h3>
+           <p class="timeline-org" style="font-size: 0.78rem;">Higher Institute of Engineering and Technology in El-Mahalla El-Kubra</p>
+           <p class="timeline-desc" style="font-size: 0.75rem; line-height: 1.5;">Completed specialized practical training in robotics applications and embedded systems development.</p>
+           <div class="timeline-tags">
+           <span class="project-tag">Robotics</span>
+           <span class="project-tag">Embedded Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ورشة مشواري (اليونسكو/الشباب) -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date" style="font-size: 0.75rem;">OCT 2025</div>
+          <h3 class="timeline-title">PROFESSIONAL CAREER GUIDANCE & SOFT SKILLS TRAINEE (MESHWARY)</h3>
+          <p class="timeline-org" style="font-size: 0.78rem;">UNICEF Egypt & Ministry of Youth and Sports</p>
+          <p class="timeline-desc" style="font-size: 0.75rem; line-height: 1.5;">Successfully completed professional career guidance, leadership, and interpersonal soft skills workshops.</p>
+          <div class="timeline-tags">
+            <span class="project-tag">Soft Skills</span>
+            <span class="project-tag">Career Guidance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- مومنتا -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date" style="font-size: 0.75rem;">OCT 2025 — PRESENT</div>
+          <h3 class="timeline-title">TECHNICAL ASSISTANT & MEDIA COORDINATOR</h3>
+          <p class="timeline-org" style="font-size: 0.78rem;">Momenta — Kafr El-Sheikh, Egypt</p>
+          <p class="timeline-type" style="font-size: 0.75rem;">VOLUNTEERING</p>
+        </div>
+      </div>
+
+      <!-- الكلية وليدر الدفعة والمشاريع -->
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-date" style="font-size: 0.75rem;">JAN 2024 — 2028 (EXPECTED)</div>
+          <h3 class="timeline-title">B.SC. COMPUTER & CONTROL ENGINEERING & BATCH LEADER</h3>
+          <p class="timeline-org" style="font-size: 0.78rem;">Higher Institute of Engineering and Technology — Kafr El-Sheikh, Egypt</p>
+          <p class="timeline-desc" style="font-size: 0.75rem; line-height: 1.5;">Serving as the official Batch Leader (Class Representative), managing academic coordination and representing students. Led more than 5 major college technical and engineering projects as team lead.</p>
+          <p class="timeline-type" style="font-size: 0.75rem;">GRADE: VERY GOOD</p>
+          <div class="timeline-tags">
+            <span class="project-tag">Batch Leader</span>
+            <span class="project-tag">Project Leadership</span>
+            <span class="project-tag">Engineering Projects</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates" class="card">
+      <div class="card-header">[ CERTIFICATES_&_AWARDS / 008 ]</div>
+    
+        <!-- 1. Introduction to APIs in Python -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <h4 class="cert-title">Introduction to APIs in Python</h4>
+            <p class="cert-org">DataCamp — AUG 2026</p>
+          </div>
+        </div>
+
+        <!-- 2. AI Literacy -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <h4 class="cert-title">AI Literacy (AI Empower Yourself)</h4>
+            <p class="cert-org">MCIT & Microsoft Egypt — JUN 2026</p>
+          </div>
+        </div>
+
+        <!-- 3. SQL Advanced -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <a href="https://www.hackerrank.com/certificates/iframe/0d919411faa8" target="_blank" class="cert-title cert-link">SQL (Advanced) Certificate</a>
+            <p class="cert-org">HackerRank — MAR 2026</p>
+          </div>
+        </div>
+
+        <!-- 4. SQL Basic -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <a href="https://www.hackerrank.com/certificates/iframe/0ea7798e1834" target="_blank" class="cert-title cert-link">SQL (Basic) Certificate</a>
+            <p class="cert-org">HackerRank — FEB 2026</p>
+          </div>
+        </div>
+
+        <!-- 5. 2nd Place - Desktop Applications -->
+        <div class="cert-item">
+          <div class="cert-icon">🏆</div>
+          <div class="cert-content">
+            <h4 class="cert-title">2nd Place — Desktop Applications Competition</h4>
+            <p class="cert-org">Ministry of Higher Education (Mansoura Higher Institute) — DEC 2025</p>
+          </div>
+        </div>
+
+        <!-- 6. Professional Career Guidance & Soft Skills (Mashwary) -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <h4 class="cert-title">Professional Career Guidance & Soft Skills (Mashwary)</h4>
+            <p class="cert-org">UNICEF Egypt & Ministry of Youth — OCT 2025</p>
+          </div>
+        </div>
+
+        <!-- 7. Renewable Energy Project Certificate -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <h4 class="cert-title">Certificate of Appreciation - Renewable Energy Project</h4>
+            <p class="cert-org">Mansoura Higher Institute of Engineering and Technology — MID 2025</p>
+          </div>
+        </div>
+
+        <!-- 8. Robotics & Embedded Systems Workshop -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <h4 class="cert-title">Robotics & Embedded Systems Workshop Participation</h4>
+            <p class="cert-org">Higher Institute of Engineering and Technology in El-Mahalla El-Kubra — MID 2025</p>
+          </div>
+        </div>
+
+        <!-- 9. Best Presentation Award - Al-Qomi Forum -->
+        <div class="cert-item">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-content">
+            <h4 class="cert-title">Best Presentation Award — Al-Qomi Innovations Forum</h4>
+            <p class="cert-org">Ministry of Higher Education (General Administration of Student Welfare) — FEB 2025</p>
+          </div>
+        </div>
+
+        <!-- 10. Best Project Idea & Best Presentation Award -->
+        <div class="cert-item">
+          <div class="cert-icon">🏅</div>
+          <div class="cert-content">
+            <h4 class="cert-title">Best Project Idea & Best Presentation Award</h4>
+            <p class="cert-org">Ministry of Higher Education / HIET Kafr El-Sheikh (Al-Abaqera Forum) — FEB 2025</p>
+          </div>
+        </div>
+
+        <!-- 11. C++ Programming Fundamentals -->
+        <div class="cert-item">
+          <div class="cert-icon">📜</div>
+          <div class="cert-content">
+            <h4 class="cert-title">C++ Programming Fundamentals Certificate</h4>
+            <p class="cert-org">Syndicate of Engineers & HIET — MAY 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+
+   
+
+    <!-- ══════ ROW 5: CONTACT ══════ -->
+    <section id="contact" class="card full-width-card contact-card">
+     <div class="card-header">
+       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" style="vertical-align: middle; margin-right: 6px;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+       NEW_MESSAGE.SYS
+     </div>
+
+     <form id="contact-form" class="contact-form" onsubmit="return handleSubmit(event)">
+      <!-- Custom Web3Forms Configuration -->
+      <input type="hidden" name="subject" value="رسالة جديدة من البورتفوليو الشخصي">
+      <input type="hidden" name="from_name" value="FARES.OS Portfolio">
+
+      <!-- Row 1: Name + Email -->
+      <div class="form-row">
+        <div class="form-group">
+          <input type="text" name="name" class="form-input" placeholder="NAME" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" class="form-input" placeholder="EMAIL" required />
+        </div>
+      </div>
+
+      <!-- Row 2: Message + Globe -->
+      <div class="form-message-row">
+        <div class="form-group form-message-group">
+          <textarea name="message" class="form-input form-textarea" placeholder="MESSAGE" rows="6" required></textarea>
+        </div>
+        <div class="globe-wrapper">
+          <canvas id="globe-canvas"></canvas>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="form-submit" id="submit-btn">
+        <span class="submit-text">SUBMIT</span>
+        <span class="submit-loading" style="display:none">SENDING...</span>
+      </button>
+      <p class="form-status" id="form-status"></p>
+     </form>
+    
+
+      <!-- Social links + Contact info below the form -->
+      <div class="contact-info-bar">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.fares221199@gmail.com&su=Hello%20Fares&body=I%20saw%20your%20portfolio%20and%20want%20to%20connect." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="contact-info-item contact-info-link">
+          <span class="contact-emoji">📧</span> eng.fares221199@gmail.com
+        </a>
+        <a href="https://wa.me/201009614120" target="_blank" rel="noopener" class="contact-info-item contact-info-link">
+          <span class="contact-emoji">💬</span> +201009614120
+        </a>
+        <div class="contact-info-item">
+          <span class="contact-emoji">📍</span> Alexandria, Egypt
+      </div>
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/fares-el-sheikh-aa7758295" target="_blank" class="contact-social" title="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/faresali221199" target="_blank" class="contact-social" title="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://www.hackerrank.com/profile/eng_fares221199" target="_blank" class="contact-social" title="HackerRank">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12S13.287 24 12 24s-9.75-4.885-10.395-6c-.641-1.115-.641-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908h.701c.141 0 .254-.115.254-.258 0-.094-.049-.176-.123-.221L9.223 4.896c-.07-.078-.186-.094-.27-.035-.02.014-.038.032-.054.054L7.33 6.429c-.078.07-.093.186-.035.27.039.058.1.093.166.093h.7v10.263h-.7c-.141 0-.254.115-.254.258 0 .094.049.176.123.221l1.572 1.533c.07.078.186.094.27.035.02-.014.038-.032.054-.054l1.569-1.533c.078-.07.093-.186.035-.27-.039-.058-.1-.093-.166-.093h-.701v-4.025h4.074v4.174h-.7c-.141 0-.254.115-.254.258 0 .094.049.176.123.221l1.572 1.533c.07.078.186.094.27.035.02-.014.038-.032.054-.054l1.569-1.533c.078-.07.093-.186.035-.27-.039-.058-.1-.093-.166-.093h-.7V7.057c0-.141-.115-.258-.258-.258z"/></svg>
+          </a>
+          <a href="https://link.gettap.co/Fareselsheikh136189" target="_blank" class="contact-social" title="GetTap">
+            <svg width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#1a1a1a"/><text x="12" y="15.5" text-anchor="middle" font-size="8" font-weight="600" font-family="Arial, sans-serif" fill="white">tap.</text></svg>
+          </a>
+          <a href="https://www.youtube.com/@Fares_Ali_EL_sheikh" target="_blank" class="contact-social" title="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@eng_fares_ali?is_from_webapp=1&sender_device=pc" target="_blank" class="contact-social" title="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://khamsat.com/user/eng_fares_ali" target="_blank" class="contact-social" title="Khamsat">
+            <svg width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#F5A623"/><text x="12" y="16.5" text-anchor="middle" font-size="13" font-weight="900" font-family="Arial, sans-serif" fill="#1a1a1a">5</text></svg>
+          </a>
+          <a href="https://mostaql.com/u/ENG_Fares_ali" target="_blank" class="contact-social" title="Mostaql">
+            <svg width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="#2B62A0"/><text x="12" y="17" text-anchor="middle" font-size="13" font-weight="900" font-family="Arial, sans-serif" fill="white">م</text></svg>
+          </a>
+          <a href="https://www.upwork.com/freelancers/~012c1c14df200c2f6a?mp_source=share" target="_blank" class="contact-social" title="Upwork">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703 0 1.491-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-left">
+        <span>FARES.OS v1.0</span>
+        <span class="footer-sep">|</span>
+        <span>Thank you for visiting my portfolio. Let's build something amazing together!</span>
+      </div>
+      <div class="footer-right">
+        <span>© 2026 FARES ALI EL-SHEIKH</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
